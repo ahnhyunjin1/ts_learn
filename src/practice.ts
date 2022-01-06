@@ -1,7 +1,22 @@
-function sumArray(numbers:number[]):number {
-    return numbers.reduce((acc, current) => acc+current, 0);
+import { NumericLiteral } from "typescript";
+
+interface Shape {
+    getArea(): number;
+
 }
 
-const total = sumArray([1,2,3,4,5]);
+class Circle implements Shape {
+    radius: number;
 
-console.log(total);
+    constructor(radius: number){
+        this.radius=radius;
+    }
+    getArea(){
+        return this.radius * this.radius * Math.PI;
+    }
+}
+
+class Rectangle implements Shpae {
+    width: number;
+    height : Numer;
+}

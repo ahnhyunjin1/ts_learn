@@ -18,5 +18,9 @@ class Circle implements Shape {
 
 class Rectangle implements Shpae {
     width: number;
-    height : Numer;
+    height : Number;
+    constructor(width: number, height:number){
+        this.width=width;
+        this.height:height;
+    }
 }
